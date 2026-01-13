@@ -6,3 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.concurrent.ThreadLocalRandom;
+
+@RestController
+public class WorkController {
+
+}
