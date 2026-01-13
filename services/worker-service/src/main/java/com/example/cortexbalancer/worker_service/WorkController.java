@@ -28,4 +28,19 @@ public class WorkController {
         // Returns an informative response
         return String.format("Work completed in %d ms by worker: %s", workTime, hostName);
     }
+
+    /**
+     * Method to obtain the hostname of the container
+     *
+     * * This will be crucial later on to verify that the balancer distributes the load between different instances
+     */
+    private String getHostName() {
+        try {
+            // Attempts to obtain the hostname of the OS or container
+            return InetAddress.getLocalHost().getHostName();
+        } catch (UnknownHostException e) {
+            // In the event of an error, return a generic name
+            return "unknown-worker";
+        }
+    }
 }
