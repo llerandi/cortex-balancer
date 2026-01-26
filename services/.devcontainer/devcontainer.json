@@ -1,0 +1,23 @@
+{
+    "name": "Cortex Balancer (Java 21 & Maven)",
+    "image": "mcr.microsoft.com/devcontainers/java:21-bullseye",
+    "forwardPorts": [
+        8080
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vmware.vscode-boot-dev-pack"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "none",
+            "installMaven": "true"
+        }
+    },
+
+    "remoteUser": "vscode"
+}
