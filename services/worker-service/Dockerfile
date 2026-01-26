@@ -20,8 +20,8 @@ RUN mvn clean package -DskipTests
 
 
 # --- 2. Runtime stage ---
-## Start with a new, very lightweight base image ('-slim') that only contains the JRE (Java Runtime Environment)
-FROM openjdk:21-slim
+## Start with a new, very lightweight base image that only contains the JRE (Java Runtime Environment)
+FROM eclipse-temurin:21-jre-alpine
 
 ## Set up the working directory
 WORKDIR /app
