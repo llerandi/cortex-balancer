@@ -1,0 +1,8 @@
+# Google Cloud library for interacting with Vertex AI
+google-cloud-aiplatform
+
+# TF-Agents is Google's RL framework (reverb is its memory buffer)
+tf-agents[reverb]
+
+# To make HTTP calls
+requests
