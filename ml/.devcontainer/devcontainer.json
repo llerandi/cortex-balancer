@@ -1,6 +1,6 @@
 {
-    "name": "Cortex Balancer ML (Python 3.12)",
-    "image": "mcr.microsoft.com/devcontainers/python:0-3.12-bullseye",
+    "name": "Cortex Balancer ML (Python 3.11)",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -9,6 +9,6 @@
             ]
         }
     },
-    "postCreateCommand": "pip install --user -r ../requirements.txt",
+    "postCreateCommand": "pip install --user -r requirements.txt",
     "remoteUser": "vscode"
 }
